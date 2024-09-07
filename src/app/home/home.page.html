@@ -1,20 +1,27 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Avaliação Formadora I</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-card>
+      <ion-card-content class="center-content">
+        <ion-avatar class="center-avatar">
+          <img
+            ngSrc="assets/img/avatar.png"
+            height="866"
+            width="736"
+            alt="Foto Aluno">
+        </ion-avatar>
+        <ion-card-title>Nome: {{aluno.nome}}</ion-card-title>
+        <ion-card-subtitle>Matrícula: {{aluno.mat}}</ion-card-subtitle>
+        <ion-card-subtitle>Código da Turma: {{aluno.cod}}</ion-card-subtitle>
+        <ion-card-subtitle>Curso: {{aluno.curso}}</ion-card-subtitle>
+        <ion-card-subtitle>Unidade: {{aluno.uni}}</ion-card-subtitle>
+      </ion-card-content>
+    </ion-card>
   </div>
+
 </ion-content>
