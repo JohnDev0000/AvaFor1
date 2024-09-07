@@ -1,12 +1,12 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="primary">
-    <ion-title class="ion-text-center">Avaliação Formadora I</ion-title>
+  <ion-toolbar color="secondary">
+    <ion-title class="ion-text-center" style="color: white">Avaliação Formadora I</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <div id="container">
-    <ion-card>
+    <ion-card class="custom-card">
       <ion-card-content class="center-content">
         <ion-avatar class="center-avatar">
           <img
@@ -15,7 +15,7 @@
             width="736"
             alt="Foto Aluno">
         </ion-avatar>
-        <ion-card-title>Nome: {{aluno.nome}}</ion-card-title>
+        <ion-card-title class="custom-title">Nome: {{aluno.nome}}</ion-card-title>
         <ion-card-subtitle>Matrícula: {{aluno.mat}}</ion-card-subtitle>
         <ion-card-subtitle>Código da Turma: {{aluno.cod}}</ion-card-subtitle>
         <ion-card-subtitle>Curso: {{aluno.curso}}</ion-card-subtitle>
@@ -23,5 +23,4 @@
       </ion-card-content>
     </ion-card>
   </div>
-
 </ion-content>
